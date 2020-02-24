@@ -1,23 +1,20 @@
 header {
-  height: 520px;
+  height: 400px;
   width: 100vw;
-  position: absolute;
+  padding-top: 15px;
   background: #7988BD;
   background-image: url("https://www.transparenttextures.com/patterns/noisy.png");;
 }
 
 header img {
-  position: absolute;
-  top: 135px;
-  left: 42%;
+display: block;
+margin: 0 auto
 }
 
 header h2 {
   color: #ffffff;
   font-size: 1.1em;
-  position: absolute;
-  bottom: 12%;
-  left: 44.5%;
+  text-align: center;
   font-size: 1.6em;
 }
 
