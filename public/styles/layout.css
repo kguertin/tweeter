@@ -44,3 +44,8 @@ img {
 .clr {
   clear: both;
 }
+
+/* General Layout */
+main {
+  margin: 0 5vw;
+}
