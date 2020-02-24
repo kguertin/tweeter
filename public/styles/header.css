@@ -1,0 +1,26 @@
+header {
+  height: 520px;
+  width: 100vw;
+  position: absolute;
+  background: #7988BD;
+  background-image: url("https://www.transparenttextures.com/patterns/noisy.png");;
+}
+
+header img {
+  position: absolute;
+  top: 135px;
+  left: 42%;
+}
+
+header h2 {
+  color: #ffffff;
+  font-size: 1.1em;
+  position: absolute;
+  bottom: 12%;
+  left: 45%;
+  font-size: 1.6em;
+}
+
+header h2 span {
+  font-weight: 700;
+}

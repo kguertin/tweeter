@@ -4,7 +4,7 @@ nav {
   width: 100vw;
   z-index: 1;
   background: #4056A1;
-  color: #fff;
+  color: #ffffff;
   padding: 1.5em;
 }
 
@@ -16,7 +16,6 @@ nav span {
 }
 
 nav h6 {
- display: inline-block;
  font-size: 1.1em;
  float: right;
 }
