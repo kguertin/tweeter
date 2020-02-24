@@ -29,3 +29,7 @@ nav i {
    top: 35px;
    right: 110px;
 }
+
+nav i:hover {
+  color: #0f0f0f
+}
