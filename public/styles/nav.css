@@ -1,3 +1,31 @@
 nav {
-  background-color:bisque;
+  position: absolute;
+  height: 120px;
+  width: 100vw;
+  z-index: 1;
+  background: #4056A1;
+  color: #fff;
+  padding: 1.5em;
+}
+
+nav span {
+  font-family: 'Bungee', sans-serif;
+  font-size: 1.5em;
+  position: relative;
+  top: 15px;
+}
+
+nav h6 {
+ display: inline-block;
+ font-size: 1.1em;
+ float: right;
+}
+
+nav i {
+   font-size: 1.2em;
+   color: #fff;
+   float: right;
+   position: relative;
+   top: 35px;
+   right: 110px;
 }

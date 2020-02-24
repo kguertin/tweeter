@@ -24,10 +24,23 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- body {
-   font-family: 'Source Sans Pro', sans-serif;
- }
+ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
- nav {
-   font-family: 'Bungee', sans-serif;
- }
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility Class */
+.clr {
+  clear: both;
+}
