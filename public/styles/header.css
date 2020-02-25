@@ -1,4 +1,4 @@
-header {
+.user-display {
   height: 400px;
   width: 100vw;
   padding-top: 15px;
@@ -6,12 +6,12 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/noisy.png");;
 }
 
-header img {
+.user-display img {
 display: block;
 margin: 0 auto
 }
 
-header h2 {
+.user-display h2 {
   color: #ffffff;
   font-size: 1.1em;
   text-align: center;
