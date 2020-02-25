@@ -1,0 +1,71 @@
+#published-tweets {
+  position: relative;
+  top: 40px;
+}
+
+.tweet {
+  border: 3px solid #000000;
+  margin: 0 5vw;
+  width: 80vw;
+  padding: 1.0em  1.2em;
+  height: 300px;
+}
+
+.tweet:hover {
+  box-shadow: 5px 5px 5px 5px #c6cbe1;
+}
+
+.tweet header {
+  position: relative;
+  font-size: 1.2em;
+}
+
+.tweet header .display-name{
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 90px;
+
+}
+
+.tweet header .user-name {
+  color: #7988BD;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.tweet:hover header .user-name {
+  display: inline-block;
+}
+
+
+.tweet .tweet-body {
+  position: relative;
+  top: 70px;
+  margin: 0 5px;
+}
+
+.tweet .tweet-body p {
+  font-weight: 700;
+}
+
+.tweet footer {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  bottom: 5px;
+  border-top: 3px solid #000000;
+}
+
+.tweet .date{
+ position: relative;
+ top: 20px;
+}
+
+.tweet footer span {
+  position: absolute;
+  right: 2px;
+  color: #4056A1;
+}
