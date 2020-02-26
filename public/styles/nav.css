@@ -1,35 +1,53 @@
 nav {
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: space-between;
   height: 120px;
   width: 100%;
   z-index: 1;
   background: #4056A1;
   color: #ffffff;
-  padding: 1.5em;
+  padding: 1.5rem;
 }
 
-nav span {
+nav .heading {
   font-family: 'Bungee', sans-serif;
-  font-size: 1.5em;
-  position: relative;
-  top: 15px;
+  font-size: 2.5rem;
+  padding-top: 1rem;
 }
 
-nav h6 {
- font-size: 1.1em;
- float: right;
+nav .compose {
+ font-size: 2.3rem;
+ color: #fff;
+ display: flex;
+ flex-direction: column;
+ padding-top: 0.75rem;
+ margin-right: 0.75rem;
 }
 
-nav i {
-   font-size: 1.1em;
-   color: #fff;
-   float: right;
-   position: relative;
-   top: 35px;
-   right: 110px;
+nav .compose div {
+  text-align: center;
 }
 
-nav i:hover {
-  color: #0f0f0f
+nav .compose i {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  color: #ca5462;
+}
+
+nav .compose i:hover {
+  cursor: pointer;
+}
+
+/* Bounce Effect */
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+.bounce {
+  animation: bounce 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
