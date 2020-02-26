@@ -62,9 +62,22 @@ const userData =[
      const $tweet = createTweetElements(i);
      $('#published-tweets').append($tweet);
    }
+ };
+
+ const submitTweet = () => {
+   $('form').on('submit', function(e){
+
+    e.preventDefault();
+    const data = $('textarea').serialize();
+    $.ajax('/tweets', 'method: POST', data)
+      .then(() => {
+        console.log('success')});
+   })
  }
 
  
  $(document).ready(function() {
    renderTweets(userData);
+   submitTweet();
  })
+
