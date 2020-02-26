@@ -31,12 +31,14 @@ const userData =[
  const createTweetElements = obj => {
    const date1 = new Date(obj.created_at);
    const date2 = Date.now();
-   const daysAgo = Math.round((date2 - date1) / 1000 / 60 / 60 / 24)
+   const daysAgo = Math.round((date2 - date1) / 1000 / 60 / 60 / 24);
    const markup = `
       <article class="tweet">
         <header>
+          <div>
           <img src='${obj.user.avatars}'>
           <p class="display-name">${obj.user.name}</p>
+          </div>
           <p class="user-name">${obj.user.handle}</p>
         </header>
         <div class="tweet-body">
