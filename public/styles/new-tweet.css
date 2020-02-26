@@ -5,7 +5,7 @@
   font-size: 1.5em;
   font-weight: 700;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -30,7 +30,7 @@
   color: #ffffff;
   padding: 5px;
   position: relative;
-  left: 50px;
+  left: 80px;
 }
 
 .new-tweet input:hover {
@@ -42,7 +42,7 @@
   font-family: 'Bungee', sans-serif;
   position: relative;
   top: 15px;
-  right: 50px;
+  right: 80px;
 }
 
 .max-chars {

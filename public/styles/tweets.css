@@ -6,7 +6,8 @@
 .tweet {
   border: 3px solid #000000;
   margin: 0 5vw;
-  width: 80vw;
+  margin-bottom: 2.5%;
+  width: 90%;
   padding: 1.0em  1.2em;
   height: 300px;
 }

@@ -2,7 +2,7 @@ nav {
   position: sticky;
   top: 0;
   height: 120px;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   background: #4056A1;
   color: #ffffff;
