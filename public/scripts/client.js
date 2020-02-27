@@ -93,8 +93,6 @@ const hideErrorMsg = () => {
   })
 }
 
-
-
 // Load Tweets and Events
  $(document).ready(function() {
    loadTweets();

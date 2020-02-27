@@ -1,9 +1,11 @@
+/* Tweet Container */
 #published-tweets {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
 }
 
+/* Tweet Styling */
 .tweet {
   border: 3px solid #000000;
   margin: 0 5vw;
@@ -17,6 +19,7 @@
   box-shadow: 5px 5px 5px 5px #c6cbe1;
 }
 
+/* Header */
 .tweet header {
   display: flex;
   justify-content: space-between;
@@ -43,6 +46,8 @@
   display: inline-block;
 }
 
+/* Tweet Text */
+
 .tweet .tweet-body {
   margin: 1.5rem 0.5rem;
 }
@@ -51,6 +56,7 @@
   font-weight: 700;
 }
 
+/* Footer */
 .tweet footer {
   display: flex;
   margin-top: 3rem;
