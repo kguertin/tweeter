@@ -53,10 +53,10 @@ const createTweetElements = obj => {
     e.preventDefault();
     
     if(!$('textarea').val()){
-      $('.error').show();
+      $('.error').slideDown();
       $('.error p').text('Nothing to Say? Please Enter a Tweet.')
     } else if ($('textarea').val().length > 140){
-      $('.error').show();
+      $('.error').slideDown();
       $('.error p').text('Over Character Limit! Keep it under 140 Characters Please.'); 
     } else {
       const data = $('textarea').serialize();
@@ -65,7 +65,6 @@ const createTweetElements = obj => {
           loadTweets();
           $('textarea').val('');
           $('.counter').text(140);
-          $('.error').hide();
         })
       }
     })
@@ -90,7 +89,7 @@ const toggleNewTweet = () => {
 // Error Handler
 const hideErrorMsg = () => {
   $('textarea').on('keyup', () => {
-    $('.error').hide();
+    $('.error').slideUp();
   })
 }
 

@@ -47,7 +47,7 @@ nav .compose i:hover {
   100% { transform: translateY(-10px); }
 }
 .bounce {
-  animation: bounce 1.5s;
+  animation: bounce 1.3s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
