@@ -1,0 +1,31 @@
+@media screen and (min-width: 1024px) {
+
+  .desktop-style {
+    display: flex;
+  }
+
+ .desktop-style .user-display {
+    flex: 1;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 18rem;
+  }
+
+  .desktop-style .user-display .user-content {
+    margin: auto;
+  }
+
+  .desktop-style main{
+    flex: 1;
+  }
+
+  .desktop-style main .new-tweet {
+    margin-left: 3rem;
+  }
+
+  .desktop-style main .new-tweet footer {
+    padding: 0.5rem 2rem;
+  }
+}
