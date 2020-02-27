@@ -49,7 +49,7 @@
 /* Tweet Text */
 
 .tweet .tweet-body {
-  margin: 1.5rem 0.5rem;
+  margin: 1rem 0.5rem;
 }
 
 .tweet .tweet-body p {
@@ -59,7 +59,7 @@
 /* Footer */
 .tweet footer {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 1.6rem;
   justify-content: space-between;
   padding-top: 1rem;
   width: 100%;
