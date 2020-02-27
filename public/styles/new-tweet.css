@@ -1,36 +1,43 @@
 .new-tweet {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .new-tweet h2 {
-  font-size: 1.5em;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .new-tweet textarea {
   display: block;
   border: none;
   border-bottom: 2px solid #000;
-  width: 80vw;
+  width: 90%;
   margin: 0 auto;
   background-color: #f4f1ec;
   resize: none;
   outline: none;
-  font-size: 1.3em;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 0.70;
 }
 
+.new-tweet footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+}
+
 .new-tweet input {
-  margin-top: 20px;
   font-family: 'Bungee', sans-serif;
   background-color: #4056A1;
   color: #ffffff;
   padding: 5px;
-  position: relative;
-  left: 80px;
+  margin-top: 0.75rem;
   outline: none;
 }
 
@@ -41,9 +48,6 @@
 .new-tweet span {
   float: right;
   font-family: 'Bungee', sans-serif;
-  position: relative;
-  top: 15px;
-  right: 80px;
 }
 
 .max-chars {

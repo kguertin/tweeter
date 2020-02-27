@@ -39,6 +39,7 @@ const createTweetElements = obj => {
   return markup;
  };
 
+ // Display Tweets
  const renderTweets = arr => {
    for (let i of arr) {
      const $tweet = createTweetElements(i);
@@ -75,12 +76,21 @@ const createTweetElements = obj => {
     })
   }
 
+// Toggle Sections
+const toggleNewTweet = () => {
+  $('.new-tweet').hide();
+  $('.bounce').on('click', () => {
+    $('.new-tweet').slideToggle();
+  })
+}
 
 
 
+// Load Tweets and Events
  $(document).ready(function() {
    loadTweets();
    submitTweet(); 
+   toggleNewTweet();
  })
 
 
