@@ -53,9 +53,11 @@ const createTweetElements = obj => {
     e.preventDefault();
     
     if(!$('textarea').val()){
-      alert('Please Enter a Tweet');
+      $('.error').show();
+      $('.error p').text('Nothing to Say? Please Enter a Tweet.')
     } else if ($('textarea').val().length > 140){
-      alert('Tweet is Too Long, 140 Characters Only');
+      $('.error').show();
+      $('.error p').text('Over Character Limit! Keep it under 140 Characters Please.'); 
     } else {
       const data = $('textarea').serialize();
       $.ajax({url: '/tweets', method: 'POST', data})
@@ -63,6 +65,7 @@ const createTweetElements = obj => {
           loadTweets();
           $('textarea').val('');
           $('.counter').text(140);
+          $('.error').hide();
         })
       }
     })
@@ -84,6 +87,13 @@ const toggleNewTweet = () => {
   })
 }
 
+// Error Handler
+const hideErrorMsg = () => {
+  $('textarea').on('keyup', () => {
+    $('.error').hide();
+  })
+}
+
 
 
 // Load Tweets and Events
@@ -91,6 +101,7 @@ const toggleNewTweet = () => {
    loadTweets();
    submitTweet(); 
    toggleNewTweet();
+   hideErrorMsg();
  })
 
 

@@ -53,3 +53,26 @@
 .max-chars {
   color: #d7250e;
 }
+
+/* Error Message  */
+.error {
+  display: none;
+  border: 2.5px solid #ab0000;
+  background: #f5c2c2;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+  height: 6rem;
+  width: 90%;
+  margin: 0 auto 2rem;
+  font-weight: 700;
+}
+
+.error h3 {
+  font-size: 2.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.error p {
+  font-size: 1.8rem;
+}
