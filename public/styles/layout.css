@@ -40,11 +40,6 @@ img {
   height: auto;
 }
 
-/* Utility Class */
-.clr {
-  clear: both;
-}
-
 /* General Layout */
 main {
   margin: 0 5vw;
