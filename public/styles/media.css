@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1100px) {
 
   .desktop-style {
     display: flex;
@@ -6,6 +6,7 @@
 
  .desktop-style .user-display {
     flex: 1;
+    background-color: #7988BD;
     margin-left: 3rem;
     display: flex;
     align-items: center;
@@ -19,6 +20,7 @@
 
   .desktop-style main{
     flex: 1;
+    max-width: 60vw;
   }
 
   .desktop-style main .new-tweet {

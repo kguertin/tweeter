@@ -44,3 +44,16 @@ img {
 main {
   margin: 0 5vw;
 }
+
+/* Scroll Button */
+.scroll-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 0.8rem;
+  margin-bottom: 2rem;
+  color: #ca5462;
+  font-size: 3rem;
+  cursor: pointer;
+  opacity: 0;
+}

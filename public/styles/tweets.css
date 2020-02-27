@@ -54,6 +54,7 @@
 
 .tweet .tweet-body p {
   font-weight: 700;
+  word-wrap: break-word;
 }
 
 /* Footer */
