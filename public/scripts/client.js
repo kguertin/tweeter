@@ -57,7 +57,7 @@ const createTweetElements = obj => {
       $('.error p').text('Nothing to Say? Please Enter a Tweet.')
     } else if ($('textarea').val().length > 140){
       $('.error').slideDown();
-      $('.error p').text('Over Character Limit! Keep it under 140 Characters Please.'); 
+      $('.error p').text('Keep it under 140 Characters Please.'); 
     } else {
       const data = $('textarea').serialize();
       $.ajax({url: '/tweets', method: 'POST', data})
@@ -93,12 +93,34 @@ const hideErrorMsg = () => {
   })
 }
 
+// Scroll Up Button 
+const returnToTop = () => {
+  ($(window).scroll(() => {
+    if($(window).scrollTop() >= 350){
+      $('.scroll-button').css('opacity', 1);
+      $('.compose').slideUp();
+
+    } else if ($(window).scrollTop() < 250){
+      $('.scroll-button').css('opacity', 0);
+      $('.compose').slideDown();
+    }
+
+    $('.scroll-button').on('click', () => {
+      $(window).scrollTop(0);
+      $('.new-tweet').slideDown();
+      $('textarea').focus();
+    })
+  }))
+
+}
+
 // Load Tweets and Events
  $(document).ready(function() {
    loadTweets();
    submitTweet(); 
    toggleNewTweet();
    hideErrorMsg();
+   returnToTop()
  })
 
 

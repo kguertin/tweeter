@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/media.css" type="text/css" />
 
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/33416c1218.js" crossorigin="anonymous"></script>
@@ -36,14 +37,17 @@
       </div>
     </nav>
     
+
+    <div class="desktop-style">
     <!-- Header -->
     <header class="user-display">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2><strong>Kevin</strong> Guertin</h2>
+      <div class="user-content">
+        <div>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <div>
+            <h2><strong>Kevin</strong> Guertin</h2>
+        </div>
       </div>
   </header>
 
@@ -64,10 +68,12 @@
           </footer>
         </form>
     </section>
-
+    
     <!-- Existing Tweets -->
     <section id="published-tweets">
     </section>
+    <i class="fas fa-chevron-circle-up scroll-button"></i>
     </main>
+    </div>
   </body>
 </html>

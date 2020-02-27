@@ -70,4 +70,9 @@
 .tweet footer span {
   right: 1rem;
   color: #4056A1;
+  display: none;
+}
+
+.tweet:hover footer span {
+  display: inline;
 }
