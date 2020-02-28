@@ -9,7 +9,7 @@ Tweeter is a single page application that leverages the power of AJAX calls to u
 
 !["Mobile and tablet version of the app."](https://github.com/kguertin/tweeter/blob/master/docs/screencapture-localhost-8080-2020-02-27-20_20_27.png?raw=true)
 
-!["Mobile and tablet version of the app displaying error message and tweet going into negitive count."](hhttps://github.com/kguertin/tweeter/blob/master/docs/screencapture-localhost-8080-2020-02-27-20_22_41.png?raw=true)
+!["Mobile and tablet version of the app displaying error message and tweet going into negitive count."](https://github.com/kguertin/tweeter/blob/master/docs/screencapture-localhost-8080-2020-02-27-20_22_41.png?raw=true)
 
 ## Getting Started
 
