@@ -5,11 +5,11 @@ Tweeter is a simple, single-page Twitter clone.
 Tweeter is a single page application that leverages the power of AJAX calls to update the page with the user published tweet in real time. Animations are powered by jQuery and page is designed with a strong focus on responsive degsign through the implementation of css flexbox.
 
 ## Finished Product
-!["URL Index page showing added URL's and their unique ID's"](https://github.com/kguertin/tinyapp/blob/master/docs/URL_index.png?raw=true)
+!["Desktop version of the app displaying tweets and hover effect."](https://github.com/kguertin/tweeter/blob/master/docs/Screenshot%20from%202020-02-27%2020-26-17.png?raw=true)
 
-!["Page for creating shortened URL's](https://github.com/kguertin/tinyapp/blob/master/docs/Create_URL.png?raw=true)
+!["Mobile and tablet version of the app."](https://github.com/kguertin/tweeter/blob/master/docs/screencapture-localhost-8080-2020-02-27-20_20_27.png?raw=true)
 
-!["Page displaying shortene URL with an option to edit where the URL the unique ID points to.](https://github.com/kguertin/tinyapp/blob/master/docs/Display_Short_URL.png?raw=true)
+!["Mobile and tablet version of the app displaying error message and tweet going into negitive count."](hhttps://github.com/kguertin/tweeter/blob/master/docs/screencapture-localhost-8080-2020-02-27-20_22_41.png?raw=true)
 
 ## Getting Started
 
