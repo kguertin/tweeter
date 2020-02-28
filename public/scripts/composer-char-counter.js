@@ -1,3 +1,5 @@
+// Character Counter
+
 $(document).ready(function() {
   $('textarea').keyup(function() {
     const $tweetBody = $(this);
@@ -8,5 +10,5 @@ $(document).ready(function() {
     } else {
       $counter.removeClass('max-chars');
     }
-  })
+  });
 });

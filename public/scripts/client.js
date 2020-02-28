@@ -8,7 +8,7 @@ const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
-}
+};
 
 const createTweetElements = obj => {
   const date1 = new Date(obj.created_at);
@@ -34,30 +34,30 @@ const createTweetElements = obj => {
           <i class="fas fa-heart"></i>
         </span>
       </footer>
-    </article>`
+    </article>`;
 
   return markup;
- };
+};
 
- // Display Tweets
- const renderTweets = arr => {
-   for (let i of arr) {
-     const $tweet = createTweetElements(i);
-     $('#published-tweets').prepend($tweet);
-   }
- };
+// Display Tweets
+const renderTweets = arr => {
+  for (let i of arr) {
+    const $tweet = createTweetElements(i);
+    $('#published-tweets').prepend($tweet);
+  }
+};
 
- const submitTweet = () => {
+const submitTweet = () => {
 
-   $('form').on('submit', e => { 
+  $('form').on('submit', e => {
     e.preventDefault();
     
-    if(!$('textarea').val()){
+    if (!$('textarea').val()) {
       $('.error').slideDown();
-      $('.error p').text('Nothing to Say? Please Enter a Tweet.')
-    } else if ($('textarea').val().length > 140){
+      $('.error p').text('Nothing to Say? Please Enter a Tweet.');
+    } else if ($('textarea').val().length > 140) {
       $('.error').slideDown();
-      $('.error p').text('Keep it under 140 Characters Please.'); 
+      $('.error p').text('Keep it under 140 Characters Please.');
     } else {
       const data = $('textarea').serialize();
       $.ajax({url: '/tweets', method: 'POST', data})
@@ -65,42 +65,42 @@ const createTweetElements = obj => {
           loadTweets();
           $('textarea').val('');
           $('.counter').text(140);
-        })
-      }
-    })
-  }
+        });
+    }
+  });
+};
   
-  const loadTweets = () => {
-    $.ajax({url: '/tweets/', method: 'GET', dataType: 'json'})
+const loadTweets = () => {
+  $.ajax({url: '/tweets/', method: 'GET', dataType: 'json'})
     .then((result) => {
       $('#published-tweets').empty();
-        renderTweets(result);
-    })
-  }
+      renderTweets(result);
+    });
+};
 
 // Toggle Sections
 const toggleNewTweet = () => {
   $('.new-tweet').hide();
   $('.bounce').on('click', () => {
     $('.new-tweet').slideToggle();
-  })
-}
+  });
+};
 
 // Error Handler
 const hideErrorMsg = () => {
   $('textarea').on('keyup', () => {
     $('.error').slideUp();
-  })
-}
+  });
+};
 
-// Scroll Up Button 
+// Scroll Up Button
 const returnToTop = () => {
   ($(window).scroll(() => {
-    if($(window).scrollTop() >= 350){
+    if ($(window).scrollTop() >= 250) {
       $('.scroll-button').css('opacity', 1);
       $('.compose').slideUp();
 
-    } else if ($(window).scrollTop() < 250){
+    } else if ($(window).scrollTop() < 250) {
       $('.scroll-button').css('opacity', 0);
       $('.compose').slideDown();
     }
@@ -109,19 +109,19 @@ const returnToTop = () => {
       $(window).scrollTop(0);
       $('.new-tweet').slideDown();
       $('textarea').focus();
-    })
-  }))
+    });
+  }));
 
-}
+};
 
 // Load Tweets and Events
- $(document).ready(function() {
-   loadTweets();
-   submitTweet(); 
-   toggleNewTweet();
-   hideErrorMsg();
-   returnToTop()
- })
+$(document).ready(function() {
+  loadTweets();
+  submitTweet();
+  toggleNewTweet();
+  hideErrorMsg();
+  returnToTop();
+});
 
 
 
